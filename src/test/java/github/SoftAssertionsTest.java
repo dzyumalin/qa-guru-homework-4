@@ -19,22 +19,22 @@ public class SoftAssertionsTest {
 
     @BeforeEach
     void openWikiPage() {
-        // Откройте страницу Selenide в Github
+        // Откройте страницу Selenide в Github //
         open("https://github.com/selenide/selenide/");
-        // Перейдите в раздел Wiki проекта
+        // Перейдите в раздел Wiki проекта //
         $(byText("Wiki")).click();
     }
 
     @Test
     void checkSoftAssertion() {
-        // Убедитесь, что в списке страниц (Pages) есть страница SoftAssertions
+        // Убедитесь, что в списке страниц (Pages) есть страница SoftAssertions //
         $(byText("Soft assertions")).shouldBe(visible);
     }
 
 
     @Test
     void checkJunitExampleTest() {
-        //  - Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
+        //  - Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5 //
         $(byText("Soft assertions")).click();
         $(byText("Using JUnit5 extend test class:")).shouldBe(visible);
     }
