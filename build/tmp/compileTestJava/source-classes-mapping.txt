@@ -1,4 +1,0 @@
-actions/DragAndDrop.java
- actions.DragAndDrop
-github/SoftAssertionsTest.java
- github.SoftAssertionsTest
